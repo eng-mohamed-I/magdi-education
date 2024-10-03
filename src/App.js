@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/home/home";
 import NotFound from "./pages/notFound/notFound";
-
+// app routes
 function AppRoutes() {
   return (
     <BrowserRouter>
