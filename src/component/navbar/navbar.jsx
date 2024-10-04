@@ -1,25 +1,45 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import style from "./navbar.module.css";
 
 const Navbar = () => {
   return (
-    <ul className="nav justify-content-center bg-dark w-100">
-      <li className="nav-item">
-        <NavLink className="nav-link active" aria-current="page" href="#">
-          Home
-        </NavLink>
-      </li>
-      <li className="nav-item">
-        <NavLink to="/contact" className="nav-link">
-          Contact
-        </NavLink>
-      </li>
-      <li className="nav-item">
-        <NavLink to="/lesson" className="nav-link">
-          Lesson
-        </NavLink>
-      </li>
-    </ul>
+    <nav class=" position-fixed w-100 navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <Link to="/" class="navbar-brand text-primary">
+          Magdi
+        </Link>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-current="page" href="#">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">
+                Features
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">
+                Pricing
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 };
 

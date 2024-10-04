@@ -17,7 +17,7 @@ function AppRoutes() {
 function App() {
   return (
     <>
-      <AppRoutes />;
+      <AppRoutes />
     </>
   );
 }

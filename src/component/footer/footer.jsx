@@ -6,23 +6,35 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-light py-4">
+    <footer className="text-light py-4">
       <div className="container text-center">
         <ul className="list-inline">
           <li className="list-inline-item">
-            <a href="#!" className="text-light">
+            <a
+              target="_blank"
+              href="https://web.facebook.com/magdiyy"
+              className="text-light"
+            >
               <FaFacebookSquare />
             </a>
           </li>
           <li className="list-inline-item">
-            <a href="#!" className="text-light">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/mohamed._.magdiy?igsh=MTRqbngzODl0aDlr"
+              className="text-light"
+            >
               <FaInstagram />
             </a>
           </li>
           <li className="list-inline-item">
-            <Link to="/contact" className="text-light">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/mohammed-magdiy/"
+              className="text-light"
+            >
               <FaLinkedin />
-            </Link>
+            </a>
           </li>
         </ul>
         <p>&copy; 2024 All Rights Reserved.</p>

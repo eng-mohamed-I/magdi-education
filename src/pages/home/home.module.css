@@ -1,7 +1,12 @@
 .home {
-  min-height: 200vh;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.navbar {
+  height: 10vh;
 }
 
 .main {
-  background-color: yellow;
+  min-height: 80vh;
 }
