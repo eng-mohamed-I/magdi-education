@@ -22,18 +22,17 @@ const Navbar = () => {
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-light" aria-current="page" href="#">
-                Home
+              <a
+                class="nav-link text-light"
+                aria-current="page"
+                href="#youtube"
+              >
+                Youtube
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-light" href="#">
-                Features
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">
-                Pricing
+                Contact
               </a>
             </li>
           </ul>
