@@ -18,7 +18,7 @@ Creating an engaging and inclusive classroom environment is very important to me
             src={photo}
             alt={name}
             className="rounded-circle me-3"
-            style={{ width: "100px", height: "100px" }}
+            style={{ width: "150px", height: "150px" }}
           />
         </div>
 

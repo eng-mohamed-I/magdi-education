@@ -1,20 +1,14 @@
-import style from "./footer.module.css";
+import style from "./contact.module.css";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import { useEffect } from "react";
 
-const Footer = () => {
-  let date = new Date();
-  let year = date.getFullYear();
-  useEffect(() => {
-    console.log(year);
-  }, []);
+const Contact = () => {
   return (
-    <footer className={`text-light py-4`}>
-      <div className="container text-center">
-        <ul className="list-inline">
+    <>
+      <div>
+        <ul className="d-flex justify-content-center flex-column list-inline">
           <li className="list-inline-item">
             <a
               target="_blank"
@@ -22,6 +16,7 @@ const Footer = () => {
               className="text-light"
             >
               <FaFacebookSquare />
+              <span className={style.links}>Facebook</span>
             </a>
           </li>
           <li className="list-inline-item">
@@ -31,6 +26,7 @@ const Footer = () => {
               className="text-light"
             >
               <FaInstagram />
+              <span className={style.links}>Instagram</span>
             </a>
           </li>
           <li className="list-inline-item">
@@ -40,6 +36,7 @@ const Footer = () => {
               className="text-light"
             >
               <FaLinkedin />
+              <span className={style.links}>LinkedIn</span>
             </a>
           </li>
           <li className="list-inline-item">
@@ -49,13 +46,13 @@ const Footer = () => {
               className="text-light"
             >
               <FaYoutube />
+              <span className={style.links}>Youtube</span>
             </a>
           </li>
         </ul>
-        <p>&copy; {year} All Rights Reserved.</p>
       </div>
-    </footer>
+    </>
   );
 };
 
-export default Footer;
+export default Contact;

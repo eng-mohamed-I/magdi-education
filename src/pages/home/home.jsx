@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import Content from "../../component/content/content";
+import { Link, NavLink, Outlet } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -20,14 +21,33 @@ const Home = () => {
       <div className={style.main}>
         <Header />
         <div className="container mt-5 mb-5 text-center ">
-          <h4
-            id="youtube"
-            className="btn btn-primary mb-5 bg-gradient
-"
+          <div
+            class="btn-group mb-5"
+            role="group"
+            aria-label="Basic radio toggle button group"
           >
-            Youtube
-          </h4>
-          <Content />
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio2"
+              autocomplete="off"
+            />
+            <Link to="youtube" class="btn btn-primary" for="btnradio2">
+              youtube
+            </Link>
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio3"
+              autocomplete="off"
+            />
+            <Link to="contact" class="btn btn-primary" for="btnradio3">
+              Contact me
+            </Link>
+          </div>
+          <Outlet />
         </div>
       </div>
       <div className={style.footer}>
